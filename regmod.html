@@ -1,0 +1,18 @@
+<p>简单内容正则匹配</p>
+<div id="root"></div>
+<script>
+let str="我是{{country}}人，来自{{province}},毕业于{{university}}"
+const obj={
+    country:'中国',
+    province:'山东省',
+    university:'北京大学'
+}
+root.innerHTML=render(str,obj)
+
+function render(str,obj){
+    let p=/\{\{(\w+)\}\}/g
+    return str.replace(p,function(r,$1){
+        return obj[$1]
+    })
+}
+</script>

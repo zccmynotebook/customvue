@@ -1,0 +1,21 @@
+<script src="../lib/mustache.js"></script>
+<section id="target">
+        
+</section>
+
+<script>
+ let obj =  {
+  "stooges": [
+    { "name": "Moe" },
+    { "name": "Larry" },
+    { "name": "Curly" }
+  ]
+}
+let template = `
+{{#stooges}}
+        <b>{{name}}</b>
+        {{/stooges}}
+`
+var rendered = Mustache.render(template, obj);
+document.getElementById('target').innerHTML = rendered;  
+</script>
