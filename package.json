@@ -7,8 +7,9 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production",
     "watch": "webpack --watch",
-    "serve": "webpack serve",
-    "vue":"webpack serve --config ./config/webpack.vue.js"
+    "template": "webpack serve --config ./config/webpack.template.js",
+    "vue": "webpack serve --config ./config/webpack.vue.js",
+    "reactive": "webpack serve --config ./config/webpack.reactive.js"
   },
   "devDependencies": {
     "@babel/core": "~7.13.15",
@@ -21,6 +22,7 @@
     "style-loader": "~2.0.0",
     "webpack": "~5.33.2",
     "webpack-cli": "~4.6.0",
-    "webpack-dev-server": "~3.11.2"
+    "webpack-dev-server": "~3.11.2",
+    "webpack-merge": "~5.8.0"
   }
 }
