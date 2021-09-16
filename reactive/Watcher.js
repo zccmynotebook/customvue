@@ -40,6 +40,7 @@ export default class Watcher{
 function parsePath(str){
     let list=str.split('.')
     return (obj)=>{
+        if(!obj) return
         for(let i=0;i<list.length;i++){
             obj=obj[list[i]]
         }
