@@ -12,7 +12,7 @@ const obj= {};
   }
 });
 
-module.exports =  function(){
-    return merge(baseConfig,obj[arguments[1].name])
+module.exports =  function(server,{name}){
+    return merge(baseConfig,obj[name])
 }
 
