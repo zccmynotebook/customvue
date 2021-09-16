@@ -6,13 +6,15 @@ module.exports = {
     devServer: {
         open: true,
         host: 'localhost.jd.com',
-        hot: true,      
+        hot: true,  
+        port:8000    
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: 'index.html',
         }),
     ],
+    devtool: 'eval-source-map',
     module: {
         rules: [
             {

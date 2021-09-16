@@ -7,9 +7,10 @@
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production",
     "watch": "webpack --watch",
-    "template": "webpack serve --config ./config/webpack.template.js",
-    "vue": "webpack serve --config ./config/webpack.vue.js",
-    "reactive": "webpack serve --config ./config/webpack.reactive.js"
+    "template": "webpack serve --config ./config/webpack.config.js --name=template",
+    "vue": "webpack serve --config ./config/webpack.config.js --name=vue",
+    "reactive": "webpack serve   --config ./config/webpack.config.js --name=reactive",
+    "ast": "webpack serve --config ./config/webpack.config.js --name=ast"
   },
   "devDependencies": {
     "@babel/core": "~7.13.15",
