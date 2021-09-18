@@ -77,6 +77,5 @@ export default class Compiler{
                val[k]=value
            }
         }) 
-        return val
-    }
+     }
 }

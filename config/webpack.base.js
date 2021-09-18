@@ -30,11 +30,5 @@ module.exports = {
                 type: 'asset',
             },
         ],
-    },
-    resolve:{
-        extensions: [".js"],
-        alias: Object.assign({}, alias, {
-            "@": path.resolve(__dirname, ".."),
-        }),
     }
 };
