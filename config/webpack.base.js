@@ -31,4 +31,10 @@ module.exports = {
             },
         ],
     },
+    resolve:{
+        extensions: [".js"],
+        alias: Object.assign({}, alias, {
+            "@": path.resolve(__dirname, ".."),
+        }),
+    }
 };

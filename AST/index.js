@@ -1,8 +1,7 @@
 import parse from './parse.js'
 let str=`
-<div>
-    正则要过关才行
-    <h2>title</h2>
+<div id="wrap">
+    <h2 class="title">VUE</h2>
     <ul>
         <li>A</li>
         <li>1</li>
@@ -10,7 +9,10 @@ let str=`
         <li>3</li>
     </ul>
 </div>
+<main>
+<h2>REACT</h2>
+</main>
 `
-parse(str)
+console.log(parse(str))
  
 

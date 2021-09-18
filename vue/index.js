@@ -1,5 +1,18 @@
 import Vue from './Vue'
 
-new Vue({
-    el:'#app'
+window.vm=new Vue({
+    el:'#app',
+    data:{
+        a:1,
+        b: {
+            c:{d:100}
+        }
+    },
+    watch:{
+        a(){
+            console.log('watch a')
+        }
+    }
 })
+// console.log(vm.a)
+// vm.a=2
