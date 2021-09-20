@@ -11,7 +11,8 @@
     "vue": "webpack serve --config ./config/webpack.config.js --name=vue",
     "reactive": "webpack serve   --config ./config/webpack.config.js --name=reactive",
     "ast": "webpack serve --config ./config/webpack.config.js --name=AST",
-    "snab": "webpack serve --config ./config/webpack.snabbdom.js"
+    "snab": "webpack serve --config ./config/webpack.snabbdom.js",
+    "diff": "webpack serve --config ./config/webpack.config.js --name=diff"
   },
   "devDependencies": {
     "@babel/core": "~7.13.15",
