@@ -7,4 +7,15 @@ window.Template = {
     }
 }
 
-window.Template.render('我来自{{city}},是{{company}}人', {city:'北京',company:'中国'})
+//window.Template.render('我来自{{city}},是{{company}}人', {city:'北京',company:'中国'})
+let data={
+    "stooges": [
+      { "name": "Moe" },
+      { "name": "Larry" },
+      { "name": "Curly" }
+    ]
+  }
+let t=`{{#stooges}}
+ {{name}} 
+{{/stooges}}`
+window.Template.render(t,data)
